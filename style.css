@@ -1,28 +1,52 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   background: #444;
+  background-size: cover;
+  background: url("tile.png");
   text-align: center;
+}
+
+img {
+  position: relative;
+  -webkit-user-select:none;
+  display:block;
+  margin:auto;
+  width: inherit;
+  height: inherit;
+  opacity: .60;
+}
+.paper img {
+  height: 85%;
+  width: 85%;
 }
 
 .wrapper {
   display: inline-flex;
-  text-align: right;
+  text-align: center;
   position: inherit;
   margin: auto;
   padding: 100px;
   width: 240px;
   height: 420px;
-  margin: 50px 0 0 0;
+
 }
 
 .toiletroll {
   position: relative;
   width: 300px;
   height: 240px;
+}
+#djt .toiletroll .roll{
+  background: #ffcccc url("crissxcross.png");
+  background-size: cover;
+}
+#hrc .toiletroll .roll{
+  background: #cce0ff url("crissxcross.png");
 }
 .toiletroll .roll {
   position: absolute;
@@ -32,12 +56,19 @@ body {
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), inset 0 5px 10px rgba(0, 0, 0, 0.3);
   /* W3C */
   background-size: 300px 240px;
-  background: #ffcccc url("crissxcross.png");
   -webkit-animation: move-roll 1.06667s linear infinite;
           animation: move-roll 1.06667s linear infinite;
 }
-#hrc .toiletroll .roll{
-  background: #cce0ff url("crissxcross.png");
+#hrc .toiletroll .roll:before {
+  background: #cce0ff;
+  background-image: -webkit-radial-gradient(center ellipse, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, #cce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
+  background-image: radial-gradient(ellipse at center, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, c#ce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, #cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
+}
+#djt .toiletroll .roll:before {
+  background: #ffcccc;
+  background-image: -webkit-radial-gradient(center ellipse, #ffcccc 0%, #ffcccc 4%, #bbbbbb 5%, #ffcccc 6%, #ffcccc 9%, #bbbbbb 10%, #ffcccc 11%, #ffcccc 14%, #bbbbbb 15%, #ffcccc 16%, #ffcccc 19%, #bbbbbb 20%, #ffcccc 21%, #ffcccc 24%, #bbbbbb 25%, #ffcccc 26%, #ffcccc 29%, #bbbbbb 30%, #ffcccc 31%, #ffcccc 34%, #bbbbbb 35%, #ffcccc 36%, #ffcccc 39%, #bbbbbb 40%, #ffcccc 41%, #ffcccc 44%, #bbbbbb 45%, #ffcccc 46%, #ffcccc 49%, #bbbbbb 50%, #ffcccc 51%, #ffcccc 54%, #bbbbbb 55%, #ffcccc 56%, #ffcccc 59%, #bbbbbb 60%, #ffcccc 61%, #ffcccc 64%, #bbbbbb 65%, #ffcccc 66%, #ffcccc 69%, #bbbbbb 70%, #ffcccc 71%, #ffcccc 74%, #bbbbbb 75%, #ffcccc 76%, #eeeeee 79%, #bbbbbb 80%, #ffcccc 81%, #ffcccc 84%, #bbbbbb 85%, #ffcccc 86%, #ffcccc 89%, #bbbbbb 90%, #ffcccc 91%, #ffcccc 94%, #bbbbbb 95%, #ffcccc 96%, #ffcccc 100%);
+  background-image: radial-gradient(ellipse at center, #ffcccc 0%, #ffcccc 4%, #bbbbbb 5%, #ffcccc 6%, #ffcccc 9%, #bbbbbb 10%, #ffcccc 11%, #ffcccc 14%, #bbbbbb 15%, #ffcccc 16%, #ffcccc 19%, #bbbbbb 20%, #ffcccc 21%, #ffcccc 24%, #bbbbbb 25%, #ffcccc 26%, #ffcccc 29%, #bbbbbb 30%, #ffcccc 31%, #ffcccc 34%, #bbbbbb 35%, #ffcccc 36%, #ffcccc 39%, #bbbbbb 40%, #ffcccc 41%, #ffcccc 44%, #bbbbbb 45%, #ffcccc 46%, #ffcccc 49%, #bbbbbb 50%, #ffcccc 51%, #ffcccc 54%, #bbbbbb 55%, #ffcccc 56%, #ffcccc 59%, #bbbbbb 60%, #ffcccc 61%, #ffcccc 64%, #bbbbbb 65%, #ffcccc 66%, #ffcccc 69%, #bbbbbb 70%, #ffcccc 71%, #ffcccc 74%, #bbbbbb 75%, #ffcccc 76%, #eeeeee 79%, #bbbbbb 80%, #ffcccc 81%, #ffcccc 84%, #bbbbbb 85%, #ffcccc 86%, #ffcccc 89%, #bbbbbb 90%, #ffcccc 91%, #ffcccc 94%, #bbbbbb 95%, #ffcccc 96%, #ffcccc 100%);
+
 }
 .toiletroll .roll:before {
   position: absolute;
@@ -47,20 +78,11 @@ body {
   width: 20%;
   right: -10%;
   border-radius: 50%;
-  background: #ffcccc;
   -webkit-animation: anim-rollend 0.2s linear infinite;
           animation: anim-rollend 0.2s linear infinite;
-  background-image: -webkit-radial-gradient(center ellipse, #ffcccc 0%, #ffcccc 4%, #bbbbbb 5%, #ffcccc 6%, #ffcccc 9%, #bbbbbb 10%, #ffcccc 11%, #ffcccc 14%, #bbbbbb 15%, #ffcccc 16%, #ffcccc 19%, #bbbbbb 20%, #ffcccc 21%, #ffcccc 24%, #bbbbbb 25%, #ffcccc 26%, #ffcccc 29%, #bbbbbb 30%, #ffcccc 31%, #ffcccc 34%, #bbbbbb 35%, #ffcccc 36%, #ffcccc 39%, #bbbbbb 40%, #ffcccc 41%, #ffcccc 44%, #bbbbbb 45%, #ffcccc 46%, #ffcccc 49%, #bbbbbb 50%, #ffcccc 51%, #ffcccc 54%, #bbbbbb 55%, #ffcccc 56%, #ffcccc 59%, #bbbbbb 60%, #ffcccc 61%, #ffcccc 64%, #bbbbbb 65%, #ffcccc 66%, #ffcccc 69%, #bbbbbb 70%, #ffcccc 71%, #ffcccc 74%, #bbbbbb 75%, #ffcccc 76%, #eeeeee 79%, #bbbbbb 80%, #ffcccc 81%, #ffcccc 84%, #bbbbbb 85%, #ffcccc 86%, #ffcccc 89%, #bbbbbb 90%, #ffcccc 91%, #ffcccc 94%, #bbbbbb 95%, #ffcccc 96%, #ffcccc 100%);
-  background-image: radial-gradient(ellipse at center, #ffcccc 0%, #ffcccc 4%, #bbbbbb 5%, #ffcccc 6%, #ffcccc 9%, #bbbbbb 10%, #ffcccc 11%, #ffcccc 14%, #bbbbbb 15%, #ffcccc 16%, #ffcccc 19%, #bbbbbb 20%, #ffcccc 21%, #ffcccc 24%, #bbbbbb 25%, #ffcccc 26%, #ffcccc 29%, #bbbbbb 30%, #ffcccc 31%, #ffcccc 34%, #bbbbbb 35%, #ffcccc 36%, #ffcccc 39%, #bbbbbb 40%, #ffcccc 41%, #ffcccc 44%, #bbbbbb 45%, #ffcccc 46%, #ffcccc 49%, #bbbbbb 50%, #ffcccc 51%, #ffcccc 54%, #bbbbbb 55%, #ffcccc 56%, #ffcccc 59%, #bbbbbb 60%, #ffcccc 61%, #ffcccc 64%, #bbbbbb 65%, #ffcccc 66%, #ffcccc 69%, #bbbbbb 70%, #ffcccc 71%, #ffcccc 74%, #bbbbbb 75%, #ffcccc 76%, #eeeeee 79%, #bbbbbb 80%, #ffcccc 81%, #ffcccc 84%, #bbbbbb 85%, #ffcccc 86%, #ffcccc 89%, #bbbbbb 90%, #ffcccc 91%, #ffcccc 94%, #bbbbbb 95%, #ffcccc 96%, #ffcccc 100%);
   background-repeat: no-repeat;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
 }
-#hrc .toiletroll .roll:before {
-  background: #cce0ff;
-  background-image: -webkit-radial-gradient(center ellipse, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, #cce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
-  background-image: radial-gradient(ellipse at center, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, c#ce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, #cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
-}
-
 .toiletroll .roll:after {
   position: absolute;
   content: "";
@@ -70,7 +92,7 @@ body {
   top: 30%;
   right: -4%;
   border-radius: 50%;
-  background: black;
+  background: #4d3319;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
 }
 .toiletroll .papers {
@@ -93,7 +115,6 @@ body {
   position: absolute;
   width: 300px;
   height: 240px;
-  background-color: #ffcccc;
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
   text-align: center;
   font: bold 15px/60px 'Roboto';
@@ -102,9 +123,13 @@ body {
   -webkit-animation: move-paper 2s linear infinite;
           animation: move-paper 2s linear infinite;
 }
+#djt .toiletroll .papers .paper {
+  background-color: #ffcccc;
+}
 #hrc .toiletroll .papers .paper {
   background-color: #cce0ff;
 }
+
 .toiletroll .papers .paper:nth-of-type(2) {
   -webkit-animation-delay: -0.66667s;
           animation-delay: -0.66667s;
@@ -188,18 +213,4 @@ body {
     background-size: 98% 98%;
     background-position: 1px 1px;
   }
-}
-img {
-  position: relative;
-  -webkit-user-select:none;
-  display:block;
-  margin:auto;
-  width: inherit;
-  height: inherit;
-  opacity: .60;
-}
-
-.paper img {
-  height: 85%;
-  width: 85%;
 }
