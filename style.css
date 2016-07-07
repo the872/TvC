@@ -5,9 +5,8 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #fff url("tile.png");
   background-size: cover;
-  background: url("tile.png");
   text-align: center;
 }
 
