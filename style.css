@@ -1,11 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
+
 html {
   height: 100%;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: #fff url("tile.png");
   background-size: cover;
   text-align: center;
 }
@@ -60,8 +61,8 @@ img {
 }
 #hrc .toiletroll .roll:before {
   background: #cce0ff;
-  background-image: -webkit-radial-gradient(center ellipse, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, #cce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
-  background-image: radial-gradient(ellipse at center, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, c#ce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, #cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
+  background-image: -webkit-radial-gradient(center ellipse, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, #cce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, #cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
+  background-image: radial-gradient(ellipse at center, #cce0ff 0%, #cce0ff 4%, #bbbbbb 5%, #cce0ff 6%, #cce0ff 9%, #bbbbbb 10%, #cce0ff 11%, #cce0ff 14%, #bbbbbb 15%, #cce0ff 16%, #cce0ff 19%, #bbbbbb 20%, #cce0ff 21%, #cce0ff 24%, #bbbbbb 25%, #cce0ff 26%, #cce0ff 29%, #bbbbbb 30%, #cce0ff 31%, #cce0ff 34%, #bbbbbb 35%, #cce0ff 36%, #cce0ff 39%, #bbbbbb 40%, #cce0ff 41%, #cce0ff 44%, #bbbbbb 45%, #cce0ff 46%, #cce0ff 49%, #bbbbbb 50%, #cce0ff 51%, #cce0ff 54%, #bbbbbb 55%, #cce0ff 56%, #cce0ff 59%, #bbbbbb 60%, #cce0ff 61%, #cce0ff 64%, #bbbbbb 65%, #cce0ff 66%, #cce0ff 69%, #bbbbbb 70%, #cce0ff 71%, #cce0ff 74%, #bbbbbb 75%, #cce0ff 76%, #eeeeee 79%, #bbbbbb 80%, #cce0ff 81%, #cce0ff 84%, #bbbbbb 85%, #cce0ff 86%, #cce0ff 89%, #bbbbbb 90%, #cce0ff 91%, #cce0ff 94%, #bbbbbb 95%, #cce0ff 96%, #cce0ff 100%);
 }
 #djt .toiletroll .roll:before {
   background: #ffcccc;
