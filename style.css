@@ -35,7 +35,17 @@ img {
   height: 420px;
 
 }
-
+#i-wrap{
+  background-color: #fff;
+  padding: 10px;
+  border-color: #000;
+  border-radius: 100px 100px 100px 100px;
+  width: 360px;
+  align:center;
+  position: inherit;
+  display: block;
+  margin: auto;
+}
 .toiletroll {
   position: relative;
   width: 300px;
